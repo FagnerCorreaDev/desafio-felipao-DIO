@@ -13,26 +13,32 @@
 //  SAÍDA
 // "O herói de nome **{nome}** está no nível de **{nível}**"
 
-let heroi = ["Fagner", 10001]
+let heroi = ["Fagner", 0]
+let terminar = false
 
-if (heroi[1] < 1000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Ferro");
-} else if (heroi[1] >= 1000 && heroi[1] <= 2000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Bronze");
-} else if (heroi[1] >= 2001 && heroi[1] <= 5000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Prata");
-}
-else if (heroi[1] >= 5001 && heroi[1] <= 7000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Ouro");
-}
-else if (heroi[1] >= 7001 && heroi[1] <= 8000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Platina");
-}
-else if (heroi[1] >= 8001 && heroi[1] <= 9000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Ascendente");
-}
-else if (heroi[1] >= 9001 && heroi[1] <= 10000) {
-    console.log("O herói de nome " + heroi[0] + " está no nível Imortal");
-} else {
-    console.log("O herói de nome " + heroi[0] + " está no nível Radiante");
+while (heroi[1] <= 10001) {
+    heroi[1] += 500;
+
+
+    if (heroi[1] < 1000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Ferro");
+    } else if (heroi[1] >= 1000 && heroi[1] <= 2000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Bronze");
+    } else if (heroi[1] >= 2001 && heroi[1] <= 5000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Prata");
+    }
+    else if (heroi[1] >= 5001 && heroi[1] <= 7000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Ouro");
+    }
+    else if (heroi[1] >= 7001 && heroi[1] <= 8000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Platina");
+    }
+    else if (heroi[1] >= 8001 && heroi[1] <= 9000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Ascendente");
+    }
+    else if (heroi[1] >= 9001 && heroi[1] <= 10000) {
+        console.log("O herói de nome " + heroi[0] + " está no nível Imortal");
+    } else {
+        console.log("O herói de nome " + heroi[0] + " está no nível Radiante");
+    }
 }
